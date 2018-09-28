@@ -38,17 +38,10 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          // fallback to style-loader in development
-          process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader"
         ]
-      },
-      {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: {
-          loader: "file-loader"
-        }
       }
     ]
   },
