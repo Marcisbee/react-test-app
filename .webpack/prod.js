@@ -11,7 +11,7 @@ module.exports = {
     resolve("../index.html"),
     resolve("../index.js"),
   ],
-  watch: true,
+  watch: false,
   output: {
     filename: "[name].bundle.js",
     chunkFilename: "[name].bundle.js",
